@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body,#app,#app>div{
+    width: 100%;
+    height: 100%;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+table{
+    border:none;
+    height: 1px;
+}
