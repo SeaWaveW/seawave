@@ -15,7 +15,7 @@
 </template>
     
 <script>
-import { httpMap,polling,sort,deepClone,hump} from '../../../seawave-js/src';
+import { httpMap,polling,sort,deepClone,hump,intersection} from '../../../js/src';
 import confirm from '@components/confirm';
 
 import {Button} from 'seawave-ui'
@@ -32,23 +32,21 @@ export default {
         browserRedirect(){
             const webReg = /phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone/
             const userAgent = navigator.userAgent.toLowerCase()
-            console.error( userAgent )
             let br = webReg.test(userAgent) ? 'm' : 'w'
-            console.log(br)
+            return br
+        },
+        //字符串反转
+        strReverse(){
+            let str = 'My Love'
+            let strArr = str.split('')
+            let newStrArr = strArr.reverse()
+            let newStr = newStrArr.join('')
+            console.log(newStr)
         }
     },
-    mounted(){
-        // let code = 307
-        // let item = httpMap( code )
-        // confirm({
-        //     title:item.title,
-        //     showCancelButton:false,
-        //     type:'error',
-        //     message:item.message
-        // })
 
-        let arr = [3,4,1,5,0]
-        let str = 'a-sb-df'
+    mounted(){
+        
     }
 }
     

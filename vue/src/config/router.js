@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import { session } from '@utils/stroage' 
+
+// import { session } from '@utils/stroage' 
+const session = {}
 
 Vue.use(VueRouter)
 

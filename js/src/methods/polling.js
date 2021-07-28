@@ -30,7 +30,6 @@ const end = ( name ) => {
     window.clearInterval(containerList[index].timer)
     // 将其从轮询列表中移除
     containerList.splice(index,1)
-    console.log('清除该轮询',name,containerList)
 }
 
 const polling = {

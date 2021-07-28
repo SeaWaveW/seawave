@@ -12,6 +12,10 @@ Vue.prototype.$api = api;
 //css
 import '@common/assets/css/index.scss';
 
+import { getWebInfo } from '../../../js/src'
+
+console.log(getWebInfo())
+
 new Vue({
   router,
   store,

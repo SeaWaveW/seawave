@@ -1,5 +1,6 @@
 <template>
   <button
+    v-if="show"
     class="sw-button"
     @click="handleClick"
     :disabled="buttonDisabled || loading"
@@ -36,6 +37,10 @@
     },
 
     props: {
+      show:{
+        type: Boolean,
+        default: true
+      },
       type: {
         type: String,
         default: 'default'

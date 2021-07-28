@@ -9,6 +9,9 @@ import download from './methods/download';
 import polling from './methods/polling';
 import sort from './methods/sort';
 import hump from './methods/hump';
+import intersection from './methods/intersection';
+import strReverse from './methods/strReverse';
+import getWebInfo from './methods/getWebInfo';
 
 export {
     storage,
@@ -23,7 +26,10 @@ export {
     download,
     polling,
     sort,
-    hump
+    hump,
+    intersection,
+    strReverse,
+    getWebInfo
 };
 
 export default {
@@ -39,5 +45,8 @@ export default {
     download,
     polling,
     sort,
-    hump
+    hump,
+    intersection,
+    strReverse,
+    getWebInfo
 };

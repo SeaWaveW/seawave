@@ -1,6 +1,7 @@
 import axios from 'axios'
 import confirm from '@components/confirm'
-import { httpMap } from '@utils/httpStateCode.js'
+// import { httpMap } from '@utils/httpStateCode.js'
+const httpMap = () => {}
 // ----------------------------------------------------  请求配置  ----------------------------------------------------
 //基础配置
 const service = axios.create({
